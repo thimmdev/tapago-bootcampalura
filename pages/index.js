@@ -1,10 +1,13 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import Menu from '../src/components/commons/Menu';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
-
-export default function Home() {
-  return <Title>My page</Title>
+export default function Home (){
+  return  (
+    <div>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet"
+      />
+      <Menu />
+    </div>
+   )
 }
