@@ -1,13 +1,18 @@
-// import styled from 'styled-components'
 import Menu from '../src/components/commons/Menu';
+import Footer from '../src/components/commons/Footer';
 
 export default function Home (){
   return  (
-    <div>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet"
-      />
+    <div style={{
+      flex: '1',
+      display: 'flex',
+      flexWrap: 'wrap',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+    }}>
+
       <Menu />
+      <Footer />
     </div>
    )
 }
